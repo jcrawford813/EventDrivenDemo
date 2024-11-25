@@ -82,11 +82,6 @@ resource "azurerm_servicebus_namespace" "demo_sb" {
 }
 
 #Create / Setup Topics
-resource "azurerm_servicebus_topic" "demo_sb_topic_fileimport" {
-  name = "file-uploaded"
-  namespace_id = azurerm_servicebus_namespace.demo_sb.id
-}
-
 resource "azurerm_servicebus_topic" "demo_sb_topic_lineprocess" {
   name = "line-extracted"
   namespace_id = azurerm_servicebus_namespace.demo_sb.id
