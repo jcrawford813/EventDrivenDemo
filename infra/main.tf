@@ -92,7 +92,7 @@ resource "azurerm_servicebus_topic" "demo_sb_topic_filebuild" {
   namespace_id = azurerm_servicebus_namespace.demo_sb.id
 }
 
-resource "azurerm_servicebus_topic" "demo_sb_topic_filebuild" {
+resource "azurerm_servicebus_topic" "demo_sb_topic_filecompleted" {
   name = "file-completed"
   namespace_id = azurerm_servicebus_namespace.demo_sb.id
 }
